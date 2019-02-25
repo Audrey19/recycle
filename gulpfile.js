@@ -1,4 +1,3 @@
-
 // Dependencies
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
@@ -12,7 +11,7 @@ var concat = require('gulp-concat');
 // Launch browser synch
 gulp.task('serve', ['sass', 'compress'], function () {
     browserSync.init({
-        proxy: "localhost/projects"
+        proxy: "localhost/projects" //url of site
     });
     gulp.watch("scss/**/*.scss", ['sass']);
     gulp.watch("js/dev/**/*.js", ['compress']);

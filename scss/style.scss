@@ -4,11 +4,12 @@
 // http://jeromedessy.be/
 // --------------------------------------
 
+@import "base/init";
+
 /* Tools */
 @import "tools/mixins";
 
 /* Site settings */
-@import "base/init";
 @import "base/reset";
 @import "base/sitesettings";
 @import "base/base";
