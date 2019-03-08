@@ -8,6 +8,7 @@ Start a project with a clean folder !
 4. Go to gulpfile.js and edit line 14 with your url.
 
 ## How to use it?
-1. Open the command line and go to your folder
+1. Check if gulp is install (gulp --v) if not, check this [link](https://gulpjs.com/docs/en/getting-started/quick-start)
+2. Open the command line and go to your folder
 2. Then, write "gulp" + enter
 3. Enjoy it !
