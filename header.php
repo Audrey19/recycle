@@ -15,7 +15,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
-<header>
-  <?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'primary' )); ?>
-</header>
+  <!--nav-menu-->
+  <header class="nav_menu_header">
+  
+    <?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'primary' )); ?>
+  </header>
