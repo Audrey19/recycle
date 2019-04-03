@@ -1,33 +1,10 @@
-@charset "UTF-8";
-/* Tools */
-.centerx {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
-
-.centery {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.centerxy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%); }
-
-/* Site settings */
 /*
 Theme Name: JD - Basic template
-Description: Basic template for Wordpress
-Author: Jérôme Dessy
+Description: Basic template for Wordpress recycle project
+Author: Audrey Mertens
 */
+/* Tools */
+/* Site settings */
 html {
   font-family: sans-serif;
   /* 1 */
