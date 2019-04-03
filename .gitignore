@@ -1,0 +1,8 @@
+node_modules/
+languages/
+package-lock.json
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
