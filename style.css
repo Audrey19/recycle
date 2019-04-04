@@ -243,7 +243,7 @@ template {
 
 body {
   padding: 0px;
-  background-color: #F2F3F3; }
+  background-color: #ffffff; }
 
 /* Modules */
 /* Layout */
@@ -354,7 +354,8 @@ body {
       border-bottom: 20px solid #a2c037; }
 
 .home_content {
-  margin-top: 50px;
+  margin-top: 5C0px;
+  margin-bottom: 50px;
   margin-left: 20%;
   margin-right: 20%;
   display: -webkit-flex;
@@ -426,3 +427,21 @@ body {
   height: 350px;
   overflow: hidden;
   border-radius: 50%; }
+
+.contact-form {
+  height: 300px;
+  background-color: #e6e4e6; }
+
+/* footer */
+.home_footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .home_footer .home_footer_logo {
+    width: 100px;
+    height: 90px;
+    margin: 20px; }

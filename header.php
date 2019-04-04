@@ -28,6 +28,7 @@
       <h1 class="home_header_title">STOP AUX CANETTES ABANDONNEES DANS <span class="underline">LA RUE </span> OU JETEES DANS LES  <span class="underline"> POUBELLES PUBLIQUES</span>!</h1>
     </div>
 
+     <!--first paragraphe and picture-->
     <div class="home_content">
       <div class="home_content_paragraphes">
         <p>On les retrouve sur les trottoirs, le bord des routes, les arrêts des transports en commun, les poubelles publiques etc. Les canettes font partie des déchets sauvages les plus courants.</p>
@@ -41,7 +42,7 @@
       </div>
     </div>
 
-    
+     <!--3 green squares-->
     <div class="home_content_squares">
       <div class="home_content_squares_items 1">
         <img class="home_content_squares_logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo1.png" alt="logo" />
@@ -60,6 +61,7 @@
       </div>
     </div>
 
+     <!--second paragraph and picture-->
       <div class="home_content">
         <div class="home_content_img_2">
           <img class="home_content_img_item " src="<?php bloginfo('template_url'); ?>/assets/images/cans.jpg" alt="cans" />
@@ -73,6 +75,18 @@
           <p><b>Les boissons conditionnées en canette et consommées à domicile doivent continuer à être jetées dans le sac bleu PMC.</b></p>
         </div>
     </div>
+
+     <!--contact form-->
+    <div class="contact-form">
+    </div>
+    
+     <!--footer-->
+	<div class="home_footer">
+		<img class="home_footer_logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo-site.png" alt="recycle cans" />
+		<img class="home_footer_logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo-site.png" alt="recycle cans" />
+		<img class="home_footer_logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo-site.png" alt="recycle cans" />
+		<img class="home_footer_logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo-site.png" alt="recycle cans" />
+	</div>
 
     
 
