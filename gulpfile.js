@@ -11,7 +11,7 @@ var concat = require('gulp-concat');
 // Launch browser synch
 gulp.task('serve', ['sass', 'compress'], function () {
     browserSync.init({
-        proxy: "localhost" //url of site
+        proxy: "localhost/recycle" //url of site
     });
     gulp.watch("scss/**/*.scss", ['sass']);
     gulp.watch("js/dev/**/*.js", ['compress']);

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); echo '/style.css?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <?php wp_head(); ?>
 
     <!--[if lt IE 9]>
@@ -22,9 +22,12 @@
   
     <?php wp_nav_menu(array('menu_id' => 'menu_container','theme_location' => 'primary' )); ?>
 
+    <img class="home_header_logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo-site.png" alt="recycle cans" />
+    </header>
+
     <div class="home_header">
       <img class="home_header_banner" src="<?php bloginfo('template_url'); ?>/assets/images/banner.jpg" alt="recycle cans" />
-      <img class="home_header_logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo-site.png" alt="recycle cans" />
+      
       <h1 class="home_header_title">STOP AUX CANETTES ABANDONNEES DANS <span class="underline">LA RUE </span> OU JETEES DANS LES  <span class="underline"> POUBELLES PUBLIQUES</span>!</h1>
     </div>
 
@@ -70,7 +73,7 @@
           <p><b><span class="style">AIDEZ-NOUS A FAIRE LA DIFFERENCE!</span> <br> ET DITES STOP AUX CANETTES ABANDONNEES DANS LA RUE OU JETEES DANS LES POUBELLES PUBLIQUES!</b></p>
           <p> <b>Le principe ? </b> Les canettes consommées ou ramassées dans la rue donnent droit à un bon d’achat de 0,05 € par canette à faire valoir dans les commerces d’alimentation durable et autres petits commerces locaux, partenaires de la commune et des 2 universités participantes.</p>
           <p>Ce projet pilote sera mené pendant 6 mois par la Région bruxelloise, Bruxelles-Environnement et Bruxelles Propreté en concertation avec le secteur de l’emballage.</p>
-          <p> <b>L’objectif </b> est de pouvoir tester le potentiel d’amélioration de la propreté publique et du recyclage des canettes consommées en rue via une prime de retour appliquée à ces dernières.</p>
+          <p> <b>L’objectif </b> est de pouvoir tester le potentiel d’amélioration de la propreté publique et du recyclage des canettes consommées en rue via une prime de retour appliquée à ces dernières.</p>
           <p><b><i>Attention : Seuls les canettes retrouvées sur la voie publique et celles consommées dans la rue peuvent être rapportées !</i></b></p>
           <p><b>Les boissons conditionnées en canette et consommées à domicile doivent continuer à être jetées dans le sac bleu PMC.</b></p>
         </div>
@@ -90,4 +93,3 @@
 
     
 
-  </header>

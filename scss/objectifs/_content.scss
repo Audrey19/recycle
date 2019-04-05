@@ -1,12 +1,14 @@
 .home_content{
-    margin-top: 5C0px;
+    margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+    font-family: 'Montserrat', sans-serif;
+    width: 657px;
     .home_content_paragraphes{
-        margin-right: 50px;
-        width: 550px;
+        margin-left: 25px;
+        width: 384px;
         .underline_grey{
             border-bottom: 10px solid $light-grey;
         }
@@ -27,10 +29,11 @@
 
 .home_content_squares{
     margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     height: 300px;
+    width: 960px;
     .home_content_squares_items{
         width: 300px; 
         height: 270px; 
