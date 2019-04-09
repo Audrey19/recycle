@@ -440,6 +440,7 @@ section.banner {
       color: #ffffff;
       height: 40%; }
     .home_content_squares .home_content_squares_items .home_content_squares_items_button {
+      text-decoration: none;
       display: inline-block;
       margin: auto;
       color: #67910c;
@@ -469,13 +470,70 @@ section.banner {
   width: 100%;
   background-color: #e6e4e6; }
   .contact_form_container .contact_form {
-    width: 450px;
+    width: 600px;
     margin: auto; }
     .contact_form_container .contact_form .contact_title {
       color: #564f51;
       font-size: 3 rem;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      padding-top: 30px; }
+
+.wp_contact_form {
+  height: 150px;
+  width: 600px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .wp_contact_form .left {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .wp_contact_form .left .nom {
+      background: none;
+      border: 0;
+      background-color: #ffffff;
+      width: 230px;
+      height: 20px;
+      border-bottom: 3px solid #564f51;
+      padding-left: 2px;
+      padding: 8px 2px;
+      padding-left: 10px; }
+    .wp_contact_form .left p {
+      margin: 0px 0px; }
+      .wp_contact_form .left p .nom {
+        background: none;
+        border: 0;
+        background-color: #ffffff;
+        width: 230px;
+        height: 20px;
+        border-bottom: 3px solid #564f51;
+        padding: 5px 2px;
+        padding-left: 10px; }
+  .wp_contact_form .right textarea {
+    background: none;
+    border: 0;
+    background-color: #ffffff;
+    height: 90%;
+    border-bottom: 3px solid #564f51;
+    padding-left: 10px; }
+
+.submit {
+  float: right;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  color: #ffffff;
+  background-color: #564f51;
+  font-weight: 600; }
 
 .home_footer {
   display: -webkit-flex;

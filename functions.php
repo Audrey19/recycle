@@ -75,7 +75,7 @@ function mytheme_admin_bar_render() {
 add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 
 function deregister_styles() {
-        // wp_deregister_style('contact-form-7' );
+        wp_deregister_style('contact-form-7' );
         // wp_deregister_style('contact-form-7');
         // wp_deregister_style('woocommerce-layout');
         // wp_deregister_style('woocommerce-general');

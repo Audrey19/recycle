@@ -4,17 +4,75 @@
     width:100%;
     background-color: $light-grey;
     .contact_form{
-        width: 450px;
+        width: 600px;
         margin:auto;
         .contact_title{
             color:$dark-grey;
             font-size: 3 rem;
             text-transform: uppercase;
             text-align: center;
+            padding-top: 30px;
         } 
     }
 }
 
+.wp_contact_form{
+    height: 150px; 
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    .left{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .nom{
+            background:none;
+            border:0;
+            background-color:$white;
+            width: 230px;
+            height: 20px;
+            border-bottom: 3px solid $dark-grey;
+            padding-left: 2px;
+            padding:8px 2px;
+            padding-left: 10px;
+            
+        }
+        p{
+            margin: 0px 0px;
+            .nom{
+                background:none;
+                border:0;
+                background-color:$white;
+                width: 230px;
+                height: 20px;
+                border-bottom: 3px solid $dark-grey;
+                padding:5px 2px;
+                padding-left: 10px;
+                
+            }
+        }
+    }
+    .right{
+        textarea{
+            background:none;
+            border:0;
+            background-color:$white;
+            height: 90%;
+            border-bottom: 3px solid $dark-grey;
+            padding-left: 10px;
+           
+          
+        }
+    }
+}
+.submit{
+   float: right;
+    padding:0.5rem 1.5rem;
+    border: none;
+    color: $white;
+    background-color: $dark-grey;
+    font-weight: 600;   
+}
 .home_footer{
     display: flex;
     justify-content:center;

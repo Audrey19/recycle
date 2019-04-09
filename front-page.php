@@ -2,27 +2,52 @@
 
 <!--banner-->
 <section class="banner">
-        <img class="banner_img" src="<?php bloginfo('template_url'); ?>/assets/images/waste.jpg" alt="recycle cans" />
-      <h1 class="banner_title">STOP AUX CANETTES ABANDONNEES DANS <span class="underline">LA RUE </span> OU JETEES DANS LES  <span class="underline"> POUBELLES PUBLIQUES</span>!</h1>
+        <?php 
+
+      $image = get_field('image_principale');
+
+      if( !empty($image) ): ?> 
+        <img  class="banner_img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+      <?php endif; ?>
+      <h1 class="banner_title"><?php the_field('titre'); ?></h1>
     </section>
 
      <!--first paragraphe and picture-->
     <section class="home_content">
       <div class="home_content_paragraphes">
-        <p>On les retrouve sur les trottoirs, le bord des routes, les arrêts des transports en commun, les poubelles publiques etc. Les canettes font partie des déchets sauvages les plus courants.</p>
-        <p>Pour lutter contre ce phénomène, un projet-pilote de reprise des canettes abandonnées vient d’être lancé dans 1 commune bruxelloise et 2 sites universitaires..</p>
-        <p>Les canettes récupérées pourront dès lors être recyclées et connaître une deuxième vie!</p>
-        <p>Savez-vous qu’une canette vide peut être recyclée et redevenir une canette en à peine 60 jours ? Une canette peut donc être recyclée jusqu’à 6 fois par an !.</p>
-        <p><b><span class="underline_grey">Qui plus est la canette est recyclable à l’infini.</span></b></p>
+        <p><?php the_field('premier_paragraphe'); ?></p>
       </div>
       <div class="home_content_img">
-        <img class="home_content_img_item" src="<?php bloginfo('template_url'); ?>/assets/images/canettes.jpg" alt="cans" />
+      <?php 
+          $image = get_field('seconde_image');
+          if( !empty($image) ): ?>
+            <img class="home_content_img_item" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+      <?php endif; ?>
       </div>
     </section>
 
      <!--3 green squares-->
     <section class="home_content_squares">
-      <div class="home_content_squares_items 1">
+
+        <?php while ( have_rows('raccourci') ) : the_row(); ?>
+        <div class="home_content_squares_items 1"> 
+          <?php 
+              $image_logo = get_sub_field('logo');
+              if( !empty($image_logo) ): ?>
+                <img class="home_content_squares_logo" src="<?php echo $image_logo['url']; ?>" alt="<?php echo $image_logo['alt']; ?>" />
+          <?php endif; ?>
+          <h2 class="home_content_squares_items_h2"><?php the_sub_field('titre'); ?></h2>
+          <?php 
+             $link = get_sub_field('lien');
+             if( $link ): ?>
+              <a class="home_content_squares_items_button" href="<?php echo $link; ?>">EN SAVOIR PLUS</a>
+          <?php endif; ?>
+        </div>
+        <?php endwhile; ?>
+
+      </section>
+
+      <!--<div class="home_content_squares_items 1">
         <img class="home_content_squares_logo" src="<?php bloginfo('template_url'); ?>/assets/images/location.svg" alt="logo" />
         <h2 class="home_content_squares_items_h2">LES LIEUX DE COLLECTE</h2>
         <button class="home_content_squares_items_button" type="button"><b>EN SAVOIR PLUS</b></button>
@@ -33,24 +58,24 @@
         <button class="home_content_squares_items_button" type="button"><b>EN SAVOIR PLUS</b></button>
       </div>
       <div class="home_content_squares_items 3">
+        
         <img class="home_content_squares_logo" src="<?php bloginfo('template_url'); ?>/assets/images/faq.svg" alt="logo" /> 
         <h2 class="home_content_squares_items_h2">FAQ</h2>
         <button class="home_content_squares_items_button" type="button"><b>EN SAVOIR PLUS</b></button>
-      </div>
-    </section>
+      </div>-->
+   
 
      <!--second paragraph and picture-->
       <div class="home_content">
         <div class="home_content_img_2">
-          <img class="home_content_img_item " src="<?php bloginfo('template_url'); ?>/assets/images/canette-rouge.jpg" alt="cans" />
+          <?php 
+              $image = get_field('troisieme_image');
+              if( !empty($image) ): ?>
+                <img class="home_content_img_item " src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+          <?php endif; ?>
         </div>
         <div class="home_content_paragraphes">
-          <p><b><span class="style">AIDEZ-NOUS A FAIRE LA DIFFERENCE!</span> <br> ET DITES STOP AUX CANETTES ABANDONNEES DANS LA RUE OU JETEES DANS LES POUBELLES PUBLIQUES!</b></p>
-          <p> <b>Le principe ? </b> Les canettes consommées ou ramassées dans la rue donnent droit à un bon d’achat de 0,05 € par canette à faire valoir dans les commerces d’alimentation durable et autres petits commerces locaux, partenaires de la commune et des 2 universités participantes.</p>
-          <p>Ce projet pilote sera mené pendant 6 mois par la Région bruxelloise, Bruxelles-Environnement et Bruxelles Propreté en concertation avec le secteur de l’emballage.</p>
-          <p> <b>L’objectif </b> est de pouvoir tester le potentiel d’amélioration de la propreté publique et du recyclage des canettes consommées en rue via une prime de retour appliquée à ces dernières.</p>
-          <p><b><i>Attention : Seuls les canettes retrouvées sur la voie publique et celles consommées dans la rue peuvent être rapportées !</i></b></p>
-          <p><b>Les boissons conditionnées en canette et consommées à domicile doivent continuer à être jetées dans le sac bleu PMC.</b></p>
+          <p><?php the_field('second_paragraphe'); ?></p>
         </div>
     </div>
 
