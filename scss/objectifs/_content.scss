@@ -9,7 +9,7 @@
     }  
     .home_content_paragraphes{
         margin-top:2rem;
-        padding:0 2em;
+        padding:0git 2em;
         @include responsive(tablet){
             width: calc(100% - 320px);
         }  
