@@ -1,78 +1,94 @@
 
 .contact_form_container{
-    height: 500px;
     width:100%;
     background-color: $light-grey;
-    .contact_form{
-        width: 600px;
-        margin:auto;
-        .contact_title{
-            color:$dark-grey;
-            font-size: 3 rem;
-            text-transform: uppercase;
-            text-align: center;
-            padding-top: 30px;
+    margin:auto;
+    .contact_title{
+        color:$dark-grey;
+        font-size: 3 rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 30px;
         } 
-    }
-}
 
-.wp_contact_form{
-    height: 150px; 
-    width: 600px;
-    display: flex;
-    justify-content: space-between;
-    .left{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .nom{
-            background:none;
-            border:0;
-            background-color:$white;
-            width: 230px;
-            height: 20px;
-            border-bottom: 3px solid $dark-grey;
-            padding-left: 2px;
-            padding:8px 2px;
-            padding-left: 10px;
-            
-        }
-        p{
-            margin: 0px 0px;
-            .nom{
-                background:none;
-                border:0;
-                background-color:$white;
-                width: 230px;
-                height: 20px;
-                border-bottom: 3px solid $dark-grey;
-                padding:5px 2px;
-                padding-left: 10px;
-                
+    #wpcf7-f62-o1{
+        margin: auto;
+        width:100%;
+        text-align: center;
+        .wpcf7-form{
+            @include responsive(tablet){
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: stretch;
+                justify-content: space-between;
+                margin:auto;
+                padding-bottom: 20px;
+                width: 600px;
+               
+            }
+            .left{
+                @include responsive(tablet){
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex: 0.5;
+               
+                }
+                .nom{
+                    background:none;
+                    border:0;
+                    background-color:$white;
+                    width: 340px;
+                    height: 20px;
+                    border-bottom: 3px solid $dark-grey;
+                    padding:8px 2px;
+                    @include responsive(tablet){
+                        width: 80%;
+                        padding-left: 10px;
+                    }
+                    
+                }
+
+            }
+            .right{
+                @include responsive(tablet){
+                    flex: 0.5;
+                }
+                textarea{
+                    background:none;
+                    border:0;
+                    background-color:$white;
+                    height: 89%;
+                    border-bottom: 3px solid $dark-grey;
+                    padding-left: 10px;
+                 
+                   
+                }
+            }
+            p{
+                margin:0;
+            }
+            .bottomright { 
+                @include responsive(tablet){
+                    flex: 0 0 100%;
+                    text-align: right;
+                } 
+                .submit{
+                    margin: 16px 0;
+                    padding:0.5rem 1.5rem;
+                    border: none;
+                    color: $white;
+                    background-color: $dark-grey;
+                    font-weight: 600;
+                      
+                }
             }
         }
     }
-    .right{
-        textarea{
-            background:none;
-            border:0;
-            background-color:$white;
-            height: 90%;
-            border-bottom: 3px solid $dark-grey;
-            padding-left: 10px;
-           
-          
-        }
-    }
 }
-.submit{
-   float: right;
-    padding:0.5rem 1.5rem;
-    border: none;
-    color: $white;
-    background-color: $dark-grey;
-    font-weight: 600;   
-}
+
+
 .home_footer{
     display: flex;
     justify-content:center;

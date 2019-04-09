@@ -5,10 +5,8 @@
 
 	 <!--contact form-->
 	 <section class="contact_form_container">
-		 <div class="contact_form">
 			<h1 class="contact_title"> Une question?</h1>
 			<?php echo do_shortcode( '[contact-form-7 id="62" title="Formulaire de contact 1"]' ); ?>
-		 </div>	
 	</section>
 
 	
