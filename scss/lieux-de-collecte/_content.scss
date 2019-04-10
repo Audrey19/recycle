@@ -1,0 +1,94 @@
+
+.map_container{
+    border-top: 2px solid $green;
+    width: 100%;
+    height: 30vh;
+    @include responsive(tablet){
+    }
+}
+
+.locations_container{
+    width: 100%;
+    @include responsive(tablet){
+        width: 960px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 60px auto;
+    }
+    h1{
+        font-size:35px;
+    }
+    h2{
+        font-size:16px;
+    }
+    p{
+        font-size:14px;
+    } 
+    .locations_container_box1{
+        text-align: center;
+    @include responsive(tablet){
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0.47;
+            }
+
+    }
+    .locations_container_box2{
+        text-align: center;
+        @include responsive(tablet){
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 0.47;
+                }
+
+    }
+    .locations_container_box3{
+        text-align: center;
+        @include responsive(tablet){
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 0 0 100%;
+            margin-top: 30px;
+                }
+        .locations_container_box_address{
+                @include responsive(tablet){
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+            }
+        }
+    }
+    .locations_container_box_contact{
+        background-color: $light-grey;
+    }
+    .locations_container_box_address{
+        width: 40%;
+        margin:auto;
+    }
+
+}
+
+.contact_container{
+    background-color: $green;
+    .contact-container-box{
+        color: $white;
+        padding: 1rem;
+        h1{
+            font-size: 20px;
+            margin-bottom: 5%;
+        }
+        p{
+            font-size: 16px;
+        }
+        @include responsive(tablet){
+            width: 960px;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}

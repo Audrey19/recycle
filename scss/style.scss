@@ -24,11 +24,17 @@
 @import "vendors/outdatedbrowser";
 
 /* navigation */
-@import "navigation/navigation";
+@import "header/navigation";
 
 /* objectifs */
 @import "objectifs/banner";
 @import "objectifs/content";
 
+/*lieu de collecte*/
+@import "lieux-de-collecte/content";
+
 /* footer */
 @import "footer/footer";
+
+/*hamburger*/
+@import "modules/burgerMenu"

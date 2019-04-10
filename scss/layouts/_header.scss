@@ -1,26 +1,2 @@
 header {
-    .menu-navmenu-container{
-        display:none;
-        @include responsive(tablet){
-            position: absolute;
-            display: block;
-            right: 0;
-
-        } 
-    }
-    .logo-container{
-        margin: auto;
-        width:300px;
-        @include responsive(tablet){
-            width:960px;
-            padding-top: 20px;
-        }
-        .logo{
-            width: 20%;
-            @include responsive(tablet){
-                width:20%;
-            }
-        }
-    }
-    
 }
