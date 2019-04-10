@@ -562,6 +562,11 @@ section.banner {
     font-size: 16px; }
   .locations_container p {
     font-size: 14px; }
+  .locations_container .location_logo {
+    display: block;
+    margin: auto;
+    width: 40px;
+    height: 20%; }
   .locations_container .locations_container_box1 {
     text-align: center; }
     @media only screen and (min-width: 768px) {
@@ -635,7 +640,8 @@ section.banner {
     padding: 1rem; }
     .contact_container .contact-container-box h1 {
       font-size: 20px;
-      margin-bottom: 5%; }
+      margin-bottom: 5%;
+      text-transform: uppercase; }
     .contact_container .contact-container-box p {
       font-size: 16px; }
     @media only screen and (min-width: 768px) {
