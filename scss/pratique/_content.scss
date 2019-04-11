@@ -1,0 +1,91 @@
+.pratique_container{
+    margin: 4em auto;
+    width: 350px;
+    h1{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 18px;
+        .color{
+            color:$green;
+        }
+    }
+    @include responsive(tablet){
+        width: 960px;
+        margin: 12% auto;
+    }
+    .pratique_container_box{
+        margin: 40px 0;
+        width: 60%;
+        .underline{
+            position: relative;
+            display: inline-block;
+                &:after{
+            content: " ";
+            position: absolute;
+            display: block;
+            bottom: 5px;
+            width:100%;
+            height:0.5vh;
+            background-color: $green;
+            z-index:-1;
+                }
+        }
+        h1{
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+.modeemploi_container{
+    background-color: $green;
+    .modeemploi_container2{
+        padding: 2em 0;
+        width: 350px;
+        text-align: center;
+        @include responsive(tablet){
+            width: 960px;
+            margin: auto;
+        }
+        h1{
+            font-size: 30px;
+            text-transform: uppercase;
+            color:$white;
+        }
+        .modeemploi_container_box{
+            @include responsive(tablet){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .modeemploi_container_box_item{
+                width: 20%;
+            }
+           
+        }
+        .modeemploi_container_3{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid $white;
+            height: 30px;
+            width: 80%;
+            margin: auto;
+            
+            .logo{
+                display: block;
+                margin: 0.5em;
+                width: 30px;
+            }
+            p{
+                color: $white;
+                margin: 0.5em;
+            }
+        }
+
+    }
+}
