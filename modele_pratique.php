@@ -21,14 +21,15 @@ Template Name: En pratique
 
 <section class="modeemploi_container">
     <div class="modeemploi_container2">
-            <h1><?php the_field('titre2'); ?></h1>
-        <?php while ( have_rows('raccourci2') ) : the_row(); ?>
+        <h1><?php the_field('titre2'); ?></h1>
         <div class="modeemploi_container_box">
+        <?php while ( have_rows('raccourci2') ) : the_row(); ?>
             <div class="modeemploi_container_box_item">
-                <p><?php the_sub_field('etape'); ?></p>
+                <p class="nmb"><?php the_sub_field('number'); ?></p>
+                <p class="text"><?php the_sub_field('etape'); ?></p>
             </div>
-        </div>
         <?php endwhile; ?>
+        </div>
 
         <?php while ( have_rows('attention') ) : the_row(); ?>
         <div class="modeemploi_container_3">

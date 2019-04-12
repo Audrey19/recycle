@@ -25,7 +25,7 @@
                 justify-content: space-between;
                 margin:auto;
                 padding-bottom: 20px;
-                width: 600px;
+                width: 48%;
                
             }
             .left{
@@ -34,6 +34,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 flex: 0.5;
+                height: 152px;
                
                 }
                 .nom{
@@ -44,9 +45,11 @@
                     height: 20px;
                     border-bottom: 3px solid $dark-grey;
                     padding:8px 2px;
+                    margin: 0.5em;
                     @include responsive(tablet){
                         width: 80%;
                         padding-left: 10px;
+                        margin: 0;
                     }
                     
                 }
@@ -60,9 +63,9 @@
                     background:none;
                     border:0;
                     background-color:$white;
-                    height: 89%;
+                    height: 70%;
                     border-bottom: 3px solid $dark-grey;
-                    padding-left: 10px;
+                    padding: 5px 15px 5px 5px;
                  
                    
                 }
@@ -86,6 +89,19 @@
                 }
             }
         }
+    }
+    .screen-reader-response{
+        display: none;
+    }
+    .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
+        padding: 2em;
+        color: red;
+    }
+    .wpcf7-not-valid-tip{
+        color: red;
+    }
+    br{
+        display: none;
     }
 }
 

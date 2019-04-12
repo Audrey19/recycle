@@ -10,20 +10,36 @@ Template Name: Lieux de collecte
 <!-- google map -->
 <section class="map_container">
 
+<div id='map'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYXVkcmV5MTkiLCJhIjoiY2p1ZTFseTYxMDd5MjN5cGlvb2ZnbGRubyJ9.3lgwiF1yJvIbaRzxCv02vQ';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [4.351996, 50.846609], // starting position as [lng, lat]
+        zoom: 10,
+        });
 
-<div id="googleMap" style="width:100%;height:400px;"></div>
+        var marker = new mapboxgl.Marker()
+        .setLngLat([4.381733, 50.815754])
+        .addTo(map);
 
-<script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
+        var marker = new mapboxgl.Marker()
+        .setLngLat([4.452633, 50.861950])
+        .addTo(map);
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-qGnuTsvT9FzQeikzj7jgNYQwhagTw7Y&callback=myMap"></script>
+        var marker = new mapboxgl.Marker()
+        .setLngLat([4.353216, 50.850243])
+        .addTo(map);
+
+        var marker = new mapboxgl.Marker()
+        .setLngLat([4.383708, 50.813939])
+        .addTo(map);
+    </script>
+   
+</section>
+
+
 
 
 

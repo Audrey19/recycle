@@ -21,7 +21,7 @@
                     color: $black;
                     }
             }
-            .menu-item-16{
+            .current_page_item {
                 font-weight: bolder;
                 
             }
@@ -29,20 +29,30 @@
     }
 }
 #menu_container.is-active{
-    height: 135px;
+    overflow: hidden;
+    height: 100vh;
+    text-align: center;
+    width:100vw;
     padding: 20px 15px;
     display: block;
     position: fixed;
     z-index: 6;
-    right:0;
     top: 76px;
     background-color: $white;
     list-style:none;
+    ul{
+        padding: 0;
+    }
+    li{
+        border-bottom: 1px dashed $green;
+        margin: 60px auto;
+        padding-bottom: 30px; 
+    }
     a{
         text-decoration: none;
-        color: $black;
+        color: $green;
         line-height: 2rem;
-
+        font-size: 25px;
         }
 
 }
@@ -68,6 +78,7 @@
             position: absolute;
             width:25%;
             top: -25px;
+            z-index: 11;
             @include responsive(tablet){
                 top: -55px;
             }

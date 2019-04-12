@@ -5,7 +5,18 @@
     div{
         z-index: -5;
     }
+    .mapboxgl-marker{
+        z-index: 5;
+        g{
+           fill:$green;
+           circle{
+               fill: black;
+               opacity: 0.2;
+           }
+        }
+        }
 }
+
 
 .locations_container{
     @include responsive(tablet){
@@ -15,7 +26,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 60px auto;
-        padding: 4em 0;
     }
     h1{
         font-size:35px;
@@ -47,7 +57,7 @@
             }
     }
     .locations_container_box1{
-        margin: 0 1em;
+        margin: 4em 2em;
         text-align: center;
     @include responsive(tablet){
         display:flex;
@@ -56,6 +66,7 @@
         flex: 0.47;
             }
     .locations_container_box_address{
+        
                 width: 100%;
                 @include responsive(tablet){
                     width: 50%;
@@ -64,7 +75,7 @@
 
     }
     .locations_container_box2{
-        margin: 0 1em;
+        margin: 2em 2em;
         text-align: center;
         @include responsive(tablet){
             display:flex;
@@ -79,7 +90,7 @@
 
     }
     .locations_container_box3{
-        margin: 0 1em;
+        margin: 4em 2em;
         text-align: center;
         @include responsive(tablet){
             display:flex;
@@ -116,6 +127,7 @@
 .contact_container{
     background-color: $green;
     .contact-container-box{
+        margin: 4em 2em 0 2em;
         color: $white;
         padding: 1rem;
         h1{
